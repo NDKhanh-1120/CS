@@ -1,0 +1,154 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.modal-body {
+    background: rgb(255, 255, 255);
+    width: 440px;
+    margin: 80px auto auto;
+    border-radius: 4px;
+    box-shadow: 10px 5px 5px rgba(95, 95, 95, 0.63);
+}
+
+#modal-signup,
+#modal-login {
+    display: none;
+    z-index: 9;
+}
+.modal-body {
+    animation: zoomIn ease .4s;
+}
+
+.modal-body-heading {
+    height: 40px;
+    padding-top: 20px;
+    padding-left: 32px;
+    padding-bottom: 44px;
+}
+.modal-body-heading h3 {
+    float: left;
+}
+.modal-body-heading .switchto-loginform {
+    margin-left: 304px;
+    color: rgb(250, 79, 0);
+    cursor: pointer;
+}
+
+.model-body-typeform {
+    padding-left: 32px;
+}
+.model-body-typeform .txb {
+    display: block;
+    height: 28px;
+    width: 252px;
+    padding-left: 12px;
+    margin-bottom: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.342);
+    border-radius: 4px;
+}
+.model-body-typeform #email {
+    width: 360px;
+}
+.model-body-typeform .note {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 28px;
+}
+.note a {
+    color: rgb(250, 79, 0);
+}
+
+.model-body-typeform #back-btn,
+.model-body-typeform #register-btn {
+    margin: 100px auto 12px 8px;
+}
+.model-body-typeform #login-btn,
+.model-body-typeform #back-btn,
+.model-body-typeform #register-btn {
+    border: none;
+    border-radius: 4px;
+    width: 104px;
+    height: 32px;
+    text-transform: uppercase;
+    background-color: rgb(250, 79, 0);
+    color: white;
+    cursor: pointer;
+}
+.model-body-typeform #back-btn {
+    color: #000;
+}
+.model-body-typeform #login-btn {
+    margin-left: 132px;
+    margin-bottom: 12px;
+}
+.model-body-typeform .forget-password {
+    text-align: center;
+}
+.model-body-typeform .forget-password a {
+    color: rgb(250, 79, 0);
+}
+.model-body-typeform #back-btn {
+    margin-left: 172px;
+    background-color: rgba(207, 207, 207, 0.74);
+}
+
+#argree-cbx {
+    margin-left: 18px;
+}
+
+.modal-linkto {
+    display: flex;
+    padding: 32px;
+    background: rgb(241, 241, 241);
+    justify-content: space-around;
+}
+.modal-linkto > a {
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.modal-linkto img {
+    width: 16px;
+}
+.modal-linkto .linkto-fb {
+    background-color: #355ca0;
+    color: #fff;
+}
+.modal-linkto .linkto-gg {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+}
+
+#modal-login .modal-linkto {
+    padding: 12px;
+}
+
+.modal .modal-body {
+    position: relative;
+}
+.modal #close-login-btn {
+    cursor: pointer;
+    position: absolute; 
+    right: -18px;  
+    top: -16px; 
+}
+.modal #close-signup-btn {
+    cursor: pointer;
+    position: absolute; 
+    right: -18px;  
+    top: -16px; 
+}
+#modal-login .close-btn:hover {
+    opacity: .5;
+}
+#modal-login #email-login,
+#modal-login #password-login {
+    width: 360px;
+}

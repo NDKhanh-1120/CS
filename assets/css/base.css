@@ -1,0 +1,67 @@
+:root {
+    --white-color: #fff;
+    --black-color: #333;
+    --text-color: #333;
+    --primary-color: rgb(250, 79, 0);
+}
+html {
+    font-size: 100%;
+    line-height: 1.6rem;
+    font-family: 'Helvetica';
+}
+.app {
+    width: 1366px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.05);
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+
+
+.grid {
+    width: 1366px;
+    max-width: 100%;
+}
+.grid__full-width {
+    width: 90%;
+}
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid__col2 {
+    padding-left: 12px;
+    width: 16.66%
+}
+.grid__col2-in-product-list {
+    margin: 0 4px;
+    width: 19.2%;
+}
+.grid__col10 {
+    width: 83.33%
+}
+footer .infor-list {
+    display: flex;
+    justify-content: space-around;
+}
+.col {
+}
+
+
+
+
+
+
+
+
