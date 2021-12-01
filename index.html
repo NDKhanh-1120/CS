@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/assets/css/keyframe.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/modal.css">
+    <link rel="stylesheet" href="/assets/css/separate.css">
+    <link rel="stylesheet" href="/assets/css/change.css">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="https://lucas.vn/wp-content/uploads/2021/06/shopee-logo-DD5CAE562A-seeklogo.com_.png" type="image/x-icon" />
+    <title>Shoppee</title>
+</head>
+<body>
+    <div class="app">
+        <header>
+            <!-- Navbar -->
+            <nav id="navbar-table">
+                <ul class="nav-list">
+                    <li class="nav-item">Vào shop bằng app</li>
+                    <li class="nav-item qrcode-container">Tải ứng dụng
+                        <div class="qrcode">
+                            <img src="/assets/imgs/qrcodeshopee.jpg" alt="">
+                        </div>
+                    </li>
+                    <li class="nav-item">Kết nối
+                        <a href="https://www.facebook.com/" class="nav-icon" target="blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://accounts.google.com/signin/v2/identifier?hl=vi&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAlAmgQ&flowName=GlifWebSignIn&flowEntry=AddSession" class="nav-icon" target="blank">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <ul class="nav-list" style="margin-right: 32px;">
+                    <li class="nav-item">
+                        <div class="nav-item-header">
+                            <i class="fas fa-bell"></i>
+                            Thông báo
+                        </div>
+                        <div class="noti-container">
+                            <h3>Thông báo gần đây</h3>
+                            <div class="noti-item">
+                                <img src="assets\imgs\chuoi.jpg" alt="">
+                                <div class="noti-content">
+                                    Đơn hàng 201900678 của bạn đang được vận chuyển
+                                </div>
+                            </div>
+                            <div class="noti-item">
+                                <img src="assets\imgs\chuoi.jpg" alt="">
+                                <div class="noti-content">
+                                    Đơn hàng 201900978 của bạn đã được giao tới trung tâm tập kết
+                                </div>
+                            </div>
+                            <div class="noti-item">
+                                <img src="assets\imgs\chuoi.jpg" alt="">
+                                <div class="noti-content">
+                                    Đơn hàng 201900678 của bạn đang được vận chuyển
+                                </div>
+                            </div>
+                            <h4 class="see-all-btn">Xem tất cả</h4>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <i class="far fa-question-circle"> Trợ giúp</i>   
+                    </li>
+                    <li class="nav-item" id="login-btn">
+                        <i class="far fa-user"> Đăng nhập</i> 
+                    </li>
+                    <li class="nav-item" id="signup-btn">
+                        Đăng ký
+                    </li>
+                </ul>
+            </nav>
+            <!-- Search -->
+            <div class="search-area">
+                <img src="/assets/imgs/logo.jpg" alt="Logo">
+                <div class="search-input">
+                    <input type="text" name="searchstring" id="search-ipt" placeholder="Tìm kiếm trong trang">
+                    <div class="search-history">
+                        <ul>
+                            <h4 class="search-histort-heading">Lịch sử tìm kiếm</h4>
+                            <li class="search-history-item">Áo bò</li>
+                            <li class="search-history-item">Quần bò</li>
+                            <li class="search-history-item">Đồng hồ</li>
+                            <li class="search-history-item">Đồ chơi công nghệ</li>
+                        </ul>
+                    </div>
+                </div>
+                <select name="search-slt" id="search-slt">
+                    <option value="">Trong shop</option>
+                    <option value="">Ngoài shop</option>
+                </select>
+                <button type="submit" accesskey="">
+                    <i class="fas fa-search search-btn"></i>
+                </button>
+                <a href="" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="cart-area">
+                        <ul>
+                            <h4>Giỏ hàng</h4>
+                            <li>
+                                <img src="/assets/imgs/a8.jpg" alt="Your product">
+                                <div class="product">
+                                    <div class="product-name">Audi A8</div>
+                                    <div class="product-price">203.050 $</div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="/assets/imgs/amg gt.jpg" alt="Your product">
+                                <div class="product">
+                                    <div class="product-name">Mercesdes Benz AMG GT</div>
+                                    <div class="product-price">203.050 $</div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="/assets/imgs/car-4361321_1280.jpg" alt="Your product">
+                                <div class="product">
+                                    <div class="product-name">Pagani Huayra 898HP..</div>
+                                    <div class="product-price">203.050 $</div>
+                                </div>
+                            </li>
+                            <h4>Xem tất cả</h4>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </header>
+        <!-- Banner -->
+        <div class="banner-section">
+            <div class="big-banner" >
+                <img src="/assets/imgs/pt719d543bd802e2731e9b833ef3ada1b8_xxhdpi.png" alt="" width="100%" >
+            </div>
+            <div class="small-banner" >
+                <div class="small-banner-first" >
+                    <img src="/assets/imgs/pt1adbacb4988c7bb0e1064491e3773339_xhdpi.png" alt="" width="100%">
+                </div>
+                <div class="small-banner-second" >
+                    <img src="/assets/imgs/pte7cf640d055378292d0166a8b6e74691_xhdpi.png" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+        <!-- BestSeller -->
+        <div class="bestseller-section grid__full-width">
+            <div class="bestseller-content">
+                <h1 class="big-heading">SIÊU GIẢM GIÁ</h1>
+                <div class="bestseller-title">
+                    <div class="title1">SẢN PHẨM BÁN CHẠY</div>
+                    <a class="link-seemore">Xem thêm <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="bestseller-list">
+                    <a class="bestseller-item" href="#">
+                        <img src="assets/imgs/chu meo (2).jpg" alt="">
+                        <p class="price-item">9.000 đ</p>
+                    </a>
+                    <a class="bestseller-item" href="#">
+                        <img src="assets/imgs/chu meo (2).jpg" alt="">
+                        <p class="price-item">9.000 đ</p>
+                    </a>
+                    <a class="bestseller-item" href="#">
+                        <img src="assets/imgs/chu meo (2).jpg" alt="">
+                        <p class="price-item">9.000 đ</p>
+                    </a>
+                    <a class="bestseller-item" href="#">
+                        <img src="assets/imgs/chu meo (2).jpg" alt="">
+                        <p class="price-item">9.000 đ</p>
+                    </a>
+                    <a class="bestseller-item" href="#">
+                        <img src="assets/imgs/chu meo (2).jpg" alt="">
+                        <p class="price-item">9.000 đ</p>
+                    </a>
+                    <a class="bestseller-item" href="#">
+                        <img src="assets/imgs/chu meo (2).jpg" alt="">
+                        <p class="price-item">9.000 đ</p>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Categories -->
+        <div class="categories-section">
+            <div class="categories-heading">
+                <p>Danh Mục</p>
+            </div>
+           <table>
+               <tr>
+                    <td>
+                        <a href="">
+                        <img src="/assets/imgs/clothes.jpg" alt="">
+                        <h5 class="categories-name">Thời trang nam</h5></a>
+                    </td>
+                    <td>
+                        <img src="/assets/imgs/clothes.jpg" alt="">
+                        <h5 class="categories-name">Điện thoại </h5>
+                    </td>
+                    <td>
+                        <img src="/assets/imgs/clothes.jpg" alt="">
+                        <h5 class="categories-name">Laptop</h5>
+                    </td>
+                    <td>
+                        <img src="/assets/imgs/clothes.jpg" alt="">
+                        <h5 class="categories-name">Máy ảnh</h5>
+                    </td>
+                    <td>
+                        <img src="/assets/imgs/clothes.jpg" alt="">
+                        <h5 class="categories-name">Đồng hồ</h5>
+                    </td>
+                    <td>
+                        <img src="/assets/imgs/clothes.jpg" alt="">
+                        <h5 class="categories-name">Giày nam</h5>
+                    </td>
+                    <td>
+                        <img src="/assets/imgs/clothes.jpg" alt="">
+                        <h5 class="categories-name">Gia dụng</h5>
+                    </td>
+                    <td>
+                        <img src="/assets/imgs/clothes.jpg" alt="">
+                        <h5 class="categories-name">Thể thao</h5>
+                    </td>
+                    <td>
+                        <img src="/assets/imgs/clothes.jpg" alt="">
+                        <h5 class="categories-name">Xe đạp</h5>
+                    </td>
+                    <td>
+                        <img src="/assets/imgs/clothes.jpg" alt="">
+                        <h5 class="categories-name">Công nghệ
+                        </h5>
+                    </td>
+               </tr>
+               <tr>
+                <td>
+                    <img src="/assets/imgs/clothes.jpg" alt="">
+                    <h5 class="categories-name">Thời trang nữ</h5>
+                </td>
+                <td>
+                    <img src="/assets/imgs/clothes.jpg" alt="">
+                    <h5 class="categories-name">Giày nữ</h5>
+                </td>
+                <td>
+                    <img src="/assets/imgs/clothes.jpg" alt="">
+                    <h5 class="categories-name">Trang điểm</h5>
+                </td>
+                <td>
+                    <img src="/assets/imgs/clothes.jpg" alt="">
+                    <h5 class="categories-name">Túi sách</h5>
+                </td>
+                <td>
+                    <img src="/assets/imgs/clothes.jpg" alt="">
+                    <h5 class="categories-name">Bách hóa</h5>
+                </td>
+                <td>
+                    <img src="/assets/imgs/clothes.jpg" alt="">
+                    <h5 class="categories-name">Sức khỏe</h5>
+                </td>
+                <td>
+                    <img src="/assets/imgs/clothes.jpg" alt="">
+                    <h5 class="categories-name">Mẹ và bé</h5>
+                </td>
+                <td>
+                    <img src="/assets/imgs/clothes.jpg" alt="">
+                    <h5 class="categories-name">Đồng hồ nữ</h5>
+                </td>
+                <td>
+                    <img src="/assets/imgs/clothes.jpg" alt="">
+                    <h5 class="categories-name">Sách</h5>
+                </td>
+                <td>
+                    <img src="/assets/imgs/clothes.jpg" alt="">
+                    <h5 class="categories-name">Đồ nhà bếp</h5>
+                </td>
+           </tr>
+                           
+           </table>
+        </div>
+        <!-- Main -->
+        <div class="container grid__full-width">
+            <nav class="categories grid__col2" >
+                <h3 class="category-heading"><i class="fas fa-bars"></i> Danh mục</h3>
+                <ul>
+                    <li class="categoty-item category--active">
+                        <a href="#" class="categoty-item-link active-category"><i class="fas fa-caret-right select" id="icon-select"></i> Áo Sơ Mi</a>
+                    </li>
+                    <li class="categoty-item">
+                        <a href="#" class="categoty-item-link"><i class="fas fa-caret-right select" id="icon-select"></i> Áo Bò</a>
+                    </li>
+                    <li class="categoty-item">
+                        <a href="#" class="categoty-item-link"><i class="fas fa-caret-right select" id="icon-select"></i> Áo Phông</a>
+                    </li>
+                    <li class="categoty-item">
+                        <a href="#" class="categoty-item-link"><i class="fas fa-caret-right select" id="icon-select"></i> Áo Kaki</a>
+                    </li>
+                    <li class="categoty-item">
+                        <a href="#" class="categoty-item-link"><i class="fas fa-caret-right select" id="icon-select"></i> Áo Bomber</a>
+                    </li>
+                    <li class="categoty-item">
+                        <a href="#" class="categoty-item-link"><i class="fas fa-caret-right select" id="icon-select"></i> Quần Bò Nam</a>
+                    </li>
+                    <li class="categoty-item">
+                        <a href="#" class="categoty-item-link"><i class="fas fa-caret-right select" id="icon-select"></i> Mũ Nam</a>
+                    </li>
+                    <li class="categoty-item">
+                        <a href="#" class="categoty-item-link"><i class="fas fa-caret-right select" id="icon-select"></i> Dây Thắt Lưng</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="product-grid grid__col10" >
+                <div class="home-filter">
+                    <div id="select-price-sort">
+                        <div class="select-price-sort-heading">
+                            <span class="select-price-sort-subheading">Sắp xếp theo </span>
+                             <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <ul id="select-price-sort-list">
+                            <li class="select-price-sort-option">Giá giảm dần</li>
+                            <li class="select-price-sort-option">Giá tăng dần</li>
+                        </ul>
+                    </div>
+                    <div id="select-price-level">
+                        <div class="select-price-level-heading">
+                            <span class="select-price-level-subheading">Mức Giá</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <ul id="select-price-level-list">
+                            <li class="select-price-level-option">Từ 100.000 đến 200.000</li>
+                            <li class="select-price-level-option">Từ 200.000 đến 500.000</li>
+                            <li class="select-price-level-option">Từ 500.000 đến 1000.000</li>
+                            <li class="select-price-level-option">Trên 1000.000 </li>
+                        </ul>
+                    </div>
+                    <div class="filter-btn active-btn">Phổ biến</div >
+                    <div class="filter-btn">Mới nhất</div >
+                    <div class="filter-btn bestseller">Bán chạy</div >
+                    <div class="paginate">
+                         1/5
+                        <button ><i class="fas fa-chevron-left"></i></button>
+                        <button ><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="home-product">
+                    <div class="grid__row product-container">
+                        <a class="product-item grid__col2-in-product-list" href="#">
+                            <img src="/assets/imgs/clothes.jpg" alt="" style="width: 100%;">
+                            <div class="product-info">
+                                <p class="product-name">Đồng hồ điện tử nam nữ SPORTS S03 thể thao, mẫu mới tuyệt đẹp</p>
+                                <div class="product-old-price"><del>1.200.000</del>đ</div>
+                                <div class="product-current-price">999.000 đ<span class="sold-number">Đã bán 1,3k</span></div>
+                            </div>
+                        </a>
+                        <a class="product-item grid__col2-in-product-list" href="#">
+                            <img src="/assets/imgs/clothes.jpg" alt="" style="width: 100%;">
+                            <div class="product-info">
+                                <p class="product-name">Đồng hồ điện tử nam nữ SPORTS S03 thể thao, mẫu mới tuyệt đẹp</p>
+                                <div class="product-old-price"><del>1.200.000</del>đ</div>
+                                <div class="product-current-price">999.000 đ</div>
+                            </div>
+                        </a>
+                        <a class="product-item grid__col2-in-product-list" href="#">
+                            <img src="/assets/imgs/clothes.jpg" alt="" style="width: 100%;">
+                            <div class="product-info">
+                                <p class="product-name">Đồng hồ điện tử nam nữ SPORTS S03 thể thao, mẫu mới tuyệt đẹp</p>
+                                <div class="product-old-price"><del>1.200.000</del>đ</div>
+                                <div class="product-current-price">999.000 đ</div>
+                            </div>
+                        </a>
+                        <a class="product-item grid__col2-in-product-list" href="#">
+                            <img src="/assets/imgs/clothes.jpg" alt="" style="width: 100%;">
+                            <div class="product-info">
+                                <p class="product-name">Đồng hồ điện tử nam nữ SPORTS S03 thể thao, mẫu mới tuyệt đẹp</p>
+                                <div class="product-old-price"><del>1.200.000</del>đ</div>
+                                <div class="product-current-price">999.000 đ</div>
+                            </div>
+                        </a>
+                        <a class="product-item grid__col2-in-product-list" href="#">
+                            <img src="/assets/imgs/clothes.jpg" alt="" style="width: 100%;">
+                            <div class="product-info">
+                                <p class="product-name">Đồng hồ điện tử nam nữ SPORTS S03 thể thao, mẫu mới tuyệt đẹp</p>
+                                <div class="product-old-price"><del>1.200.000</del>đ</div>
+                                <div class="product-current-price">999.000 đ</div>
+                            </div>
+                        </a>
+                        <a class="product-item grid__col2-in-product-list" href="#">
+                            <img src="/assets/imgs/clothes.jpg" alt="" style="width: 100%;">
+                            <div class="product-info">
+                                <p class="product-name">Đồng hồ điện tử nam nữ SPORTS S03 thể thao, mẫu mới tuyệt đẹp</p>
+                                <div class="product-old-price"><del>1.200.000</del>đ</div>
+                                <div class="product-current-price">999.000 đ</div>
+                            </div>
+                        </a>
+                        <a class="product-item grid__col2-in-product-list" href="#">
+                            <img src="/assets/imgs/clothes.jpg" alt="" style="width: 100%;">
+                            <div class="product-info">
+                                <p class="product-name">Đồng hồ điện tử nam nữ SPORTS S03 thể thao, mẫu mới tuyệt đẹp</p>
+                                <div class="product-old-price"><del>1.200.000</del>đ</div>
+                                <div class="product-current-price">999.000 đ</div>
+                            </div>
+                        </a>
+                        <a class="product-item grid__col2-in-product-list" href="#">
+                            <img src="/assets/imgs/clothes.jpg" alt="" style="width: 100%;">
+                            <div class="product-info">
+                                <p class="product-name">Đồng hồ điện tử nam nữ SPORTS S03 thể thao, mẫu mới tuyệt đẹp</p>
+                                <div class="product-old-price"><del>1.200.000</del>đ</div>
+                                <div class="product-current-price">999.000 đ</div>
+                            </div>
+                        </a>
+                        <a class="product-item grid__col2-in-product-list" href="#">
+                            <img src="/assets/imgs/clothes.jpg" alt="" style="width: 100%;">
+                            <div class="product-info">
+                                <p class="product-name">Đồng hồ điện tử nam nữ SPORTS S03 thể thao, mẫu mới tuyệt đẹp</p>
+                                <div class="product-old-price"><del>1.200.000</del>đ</div>
+                                <div class="product-current-price">999.000 đ</div>
+                            </div>
+                        </a>
+                        <a class="product-item grid__col2-in-product-list" href="#">
+                            <img src="/assets/imgs/clothes.jpg" alt="" style="width: 100%;">
+                            <div class="product-info">
+                                <p class="product-name">Đồng hồ điện tử nam nữ SPORTS S03 thể thao, mẫu mới tuyệt đẹp</p>
+                                <div class="product-old-price"><del>1.200.000</del>đ</div>
+                                <div class="product-current-price">999.000 đ</div>
+                            </div>
+                        </a>
+                        <a class="product-item grid__col2-in-product-list" href="#">
+                            <img src="/assets/imgs/clothes.jpg" alt="" style="width: 100%;">
+                            <div class="product-info">
+                                <p class="product-name">Đồng hồ điện tử nam nữ SPORTS S03 thể thao, mẫu mới tuyệt đẹp</p>
+                                <div class="product-old-price"><del>1.200.000</del>đ</div>
+                                <div class="product-current-price">999.000 đ</div>
+                            </div>
+                        </a>
+                        <a class="product-item grid__col2-in-product-list" href="#">
+                            <img src="/assets/imgs/clothes.jpg" alt="" style="width: 100%;">
+                            <div class="product-info">
+                                <p class="product-name">Đồng hồ điện tử nam nữ SPORTS S03 thể thao, mẫu mới tuyệt đẹp</p>
+                                <div class="product-old-price"><del>1.200.000</del>đ</div>
+                                <div class="product-current-price">999.000 đ</div>
+                            </div>
+                        </a>
+                        <a class="product-item grid__col2-in-product-list" href="#">
+                            <img src="/assets/imgs/clothes.jpg" alt="" style="width: 100%;">
+                            <div class="product-info">
+                                <p class="product-name">Đồng hồ điện tử nam nữ SPORTS S03 thể thao, mẫu mới tuyệt đẹp</p>
+                                <div class="product-old-price"><del>1.200.000</del>đ</div>
+                                <div class="product-current-price">999.000 đ</div>
+                            </div>
+                        </a>
+                        <a class="product-item grid__col2-in-product-list" href="#">
+                            <img src="/assets/imgs/clothes.jpg" alt="" style="width: 100%;">
+                            <div class="product-info">
+                                <p class="product-name">Đồng hồ điện tử nam nữ SPORTS S03 thể thao, mẫu mới tuyệt đẹp</p>
+                                <div class="product-old-price"><del>1.200.000</del>đ</div>
+                                <div class="product-current-price">999.000 đ</div>
+                            </div>
+                        </a>
+                        <a class="product-item grid__col2-in-product-list" href="#">
+                            <img src="/assets/imgs/clothes.jpg" alt="" style="width: 100%;">
+                            <div class="product-info">
+                                <p class="product-name">Đồng hồ điện tử nam nữ SPORTS S03 thể thao, mẫu mới tuyệt đẹp</p>
+                                <div class="product-old-price"><del>1.200.000</del>đ</div>
+                                <div class="product-current-price">999.000 đ</div>
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="hr" style="width: 100%;height:4px;background-color: var(--primary-color);"></div>
+            <div class="infor-list">
+                <div class="col">
+                    <h4 class="title">
+                        CHĂM SÓC KHÁCH HÀNG
+                    </h4>
+                    <ul>
+                        <li><a href="">Trung tâm hỗ trợ</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Shop Mail</a></li>
+                        <li><a href="">Hưỡng dẫn mua hàng</a></li>
+                        <li><a href="">Hưỡng dẫn bán hàng</a></li>
+                        <li><a href="">Thanh toán</a></li>
+                        <li><a href="">Shopee xu</a></li>
+                        <li><a href="">Vận chuyển</a></li>
+                        <li><a href="">Trả hàng & Hoàn tiền</a></li>
+                        <li><a href="">Chính sách bảo hành</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4 class="title">VỀ SHOPEE</h4>
+                    <ul>
+                        <li><a href="">Giới thiêu về shopee</a></li>
+                        <li><a href="">Tuyển dụng</a></li>
+                        <li><a href="">Điều khoản Shopee</a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                        <li><a href="">Chính hãng</a></li>
+                        <li><a href="">Kênh người bán</a></li>
+                        <li><a href="">Flash Sale</a></li>
+                        <li><a href="">Liên hệ với truyển thông</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4 class="title">THANH TOÁN</h4>
+                    <ul>
+                        <li><img src="assets/imgs/viettelpay.png" alt="" width="120px"></li>
+                    </ul>
+                    
+                </div>
+                <div class="col">
+                    <h4 class="title">THEO DÕI CHÚNG TÔI</h4>
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook"></i><span> Facebook</span></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i><span> Instagram</span></a></li>
+                        <li><a href=""><i class="fab fa-google"></i><span> Google</span></a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4 class="title">TẢI ỨNG DỤNG SHOPEE</h4>
+                    <ul>
+                        <li><a href=""><i class="fab fa-apple"></i><span>   App Store</span></a></li>
+                        <li><a href=""><i class="fab fa-google-play"></i><span>  Google Play</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- Login -->
+        <div class="modal" id="modal-login">
+            
+            <div class="modal-body">
+                <i class="fas fa-window-close close-btn" id="close-login-btn"></i>
+                <div class="modal-body-heading">
+                    <h3>Đăng nhập</h3>
+                    <div class="switchto-loginform">Đăng ký</div>
+                </div>
+                <div class="model-body-typeform">
+                    <input type="text" name="email" id="email-login" class="txb" placeholder="Email">
+                    <input type="password" name="password" id="password-login" class="txb" placeholder="Mật khẩu">
+                    <input type="submit" value="Đăng nhập" name="login-btn" id="login-btn">
+                    <div class="forget-password">Bạn quên mật khẩu ? Nhấp vào <a href="">đây</a> </div>
+                </div>
+                <div class="modal-linkto">
+                    <a class="linkto-fb" href="#">
+                        <img src="/assets/imgs/facebook-2429746_640.png" alt=""> Đăng nhập với Facebook</i>
+                    </a>
+                    <a class="linkto-gg" href="#"> 
+                        <img src="/assets/imgs/google-1088004_640.png" alt=""> Đăng ký với Google</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Sign-up -->
+        <div class="modal" id="modal-signup">
+            <div class="modal-body">
+                <i class="fas fa-window-close close-btn" id="close-signup-btn"></i>
+                <div class="modal-body-heading">
+                    <h3>Đăng ký</h3>
+                    <div class="switchto-loginform">Đăng nhập</div>
+                </div>
+                <div class="model-body-typeform">
+                    <input type="text" name="email" id="email" class="txb" placeholder="Email">
+                    <input type="password" name="password" id="password" class="txb" placeholder="Mật khẩu">
+                    <input type="password" name="confirmpassword" id="cpassword" class="txb" placeholder="Nhập lại mật khẩu">
+                    <p class="note">Bằng cách đăng ký, bạn nhấn đồng ý với <a href="">Điều khoản của Shopee</a> và <a href="">Chính sách bảo mật</a></p>
+                    <div class="checkbox-forargree">
+                        <input type="checkbox" id="argree-cbx" name="argree-cbx" value="">
+                        <label for="argree-cbx">Tôi đã đọc và đồng ý với các điều khoản của Shopee</label>
+                    </div>
+                    <input type="button" value="Trở lại" name="back" id="back-btn">
+                    <input type="submit" value="Đăng ký" name="register" id="register-btn">
+                </div>
+                <div class="modal-linkto">
+                    <a class="linkto-fb" href="#">
+                        <img src="/assets/imgs/facebook-2429746_640.png" alt=""> Kết nối với Facebook</i>
+                    </a>
+                    <a class="linkto-gg" href="#"> 
+                        <img src="/assets/imgs/google-1088004_640.png" alt=""> Kết nối với Google</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/modal.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
